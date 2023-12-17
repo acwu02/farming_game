@@ -1,0 +1,32 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(fonts/Minecraft.ttf);
+  }
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: myFirstFont;
+}
+
+#game {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column; */
+}
+
+#selectedSpace {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+}
