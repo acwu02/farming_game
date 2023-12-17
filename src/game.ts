@@ -29,6 +29,7 @@ class Plot {
         this._initializeEventListeners();
     }
 
+    // TODO populate rows at once instead of incrementally
     private _initializeEventListeners(): void {
         for (let i = 0; i < this.board.length; i++) {
             let row = this.board[i];
@@ -39,9 +40,9 @@ class Plot {
                 $span.on('mouseleave', () => {
                     $("#selectedSpace").html("");
                 })
-                $("#game").append($span);
+                $("#board").append($span);
             }
-            $("#game").append('\n');
+            $("#board").append('\n');
         }
     }
 
@@ -57,11 +58,25 @@ class Plot {
     }
 }
 
+class Inventory {
+
+}
+
+class Market {
+
+}
+
 class Game {
     private plot: Plot;
 
     constructor() {
         this.plot = new Plot(GAME_BOARD);
+        $("#market").click(() => {
+            alert("market");
+        });
+        $("#inventory").click(() => {
+            alert("inventory");
+        });
     }
 }
 

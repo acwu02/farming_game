@@ -1,32 +1,69 @@
 @font-face {
-    font-family: myFirstFont;
+    font-family: minecraft;
     src: url(fonts/Minecraft.ttf);
   }
 
 body {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-family: myFirstFont;
+    flex-direction: row;
+    font-family: minecraft;
+    height: 100vh;
+    margin: 0px;
 }
 
 #game {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 30%;
-    text-align: center;
-    transform: translate(-50%, -50%);
-    /* display: flex;
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#title {
+    height: 10%;
+}
+
+#board_container {
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#board {
+    width: 40%;
     justify-content: center;
     align-items: center;
     text-align: center;
-    flex-direction: column; */
+}
+
+#money {
+    height: 10%;
 }
 
 #selectedSpace {
     position: absolute;
     top: 50%;
-    left: 30%;
+    left: 100px;
 }
+
+#menu {
+    width: 40%;
+    background-color: rgb(199, 199, 199);
+    display: flex;
+    flex-direction: row;
+}
+
+#menu > * {
+    text-align: center;
+}
+
+#inventory {
+    width: 50%;
+}
+
+#market {
+    width: 50%;
+}
+
+
