@@ -30,11 +30,10 @@ body {
     align-items: center;
 }
 
-#board {
-    width: 40%;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.plot {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-auto-rows: minmax(1px, auto);
 }
 
 #money {
@@ -60,6 +59,40 @@ body {
 
 #inventory {
     width: 50%;
+}
+
+#inventory_title {
+    height: 10%;
+}
+
+#inventory_contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#inventory_contents > * {
+    flex: 1;
+    height: 7%;
+    margin: 5px;
+    padding: 5px;
+}
+
+.hovering {
+    background-color: gray;
+}
+
+.selected {
+    background-color: gray;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+
+}
+
+.slot {
+    /* position: fixed; */
+    /* padding: 10px; */
 }
 
 #market {
