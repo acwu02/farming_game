@@ -95,8 +95,14 @@ body {
     /* padding: 10px; */
 }
 
+.plant {
+    color: green;
+}
+
 #market {
     width: 50%;
 }
 
-
+#harvestAll {
+    margin: 5px;
+}

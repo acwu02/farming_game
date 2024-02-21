@@ -1,0 +1,12 @@
+ARCHITECTURE:
+
+Controllers:
+Slot
+EventHandler
+
+Viewers/Models:
+Plot
+Plant
+Inventory
+
+EventHandler should be at top of hierarchy (above Game)

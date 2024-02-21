@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   mode: 'development',
-  entry: './src/game.ts',  // Your main TypeScript file
+  entry: './src/game.ts',
   devtool: 'inline-source-map',
   module: {
     rules: [
@@ -17,7 +17,7 @@ module.exports = {
     extensions: ['.tsx', '.ts', '.js'],
   },
   output: {
-    filename: 'bundle.js',  // Output JavaScript bundle
+    filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
 };
